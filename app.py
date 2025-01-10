@@ -255,7 +255,7 @@ def admin_dashboard():
         new_balance = int(request.form['balance'])
         accounts['dummy']['balance'] = new_balance
         if new_balance == 50000:
-            flash("flag!")
+            flash("CTF{BankHacklolrobots3}")
     return render_template_string(admin_dashboard_html, accounts=accounts)
 
 
